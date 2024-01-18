@@ -23,12 +23,7 @@
     <section style="overflow-x: hidden;">
         <div class="row vh-100">
             <div class="col-5 bg-green py-5 px-5 text-center">
-                <h1 class="header-login">Masuk Dengan Akun Anda <br> disini</h1>
-                <p class="caption-login">
-                    meningkatkan keterampilan Anda di era digitalisasi ini <br> akan sangat membantu dalam berbagai hal.
-                </p>
 
-                <img src="{{ asset('frontend/images/login-register.svg') }}" alt="" width="800px">
             </div>
             <div class="col-7 py-5 px-5">
                 <div class="text-center">
@@ -50,9 +45,10 @@
                                 <label for="password" class="form-label">Password</label>
                                 <input type="password" class="form-control" id="password" name="password">
                             </div>
-
-
                             <button type="submit" class="btn btn-success w-100 p-3 mt-5">Masuk</button>
+                            <div class="mt-3 text-center">
+                            <p>Belum punya akun? <a href="{{ route('register') }}" class="text-decoration-none">Daftar sekarang!</a></p>
+                        </div>
                         </form>
                     </div>
                 </div>
